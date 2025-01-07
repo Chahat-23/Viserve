@@ -1,9 +1,10 @@
 .header-wrap {
     background-color: #18191C;
     width: 100% !important;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
 .header {

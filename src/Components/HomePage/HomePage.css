@@ -1,0 +1,159 @@
+.homepage {
+    background-image: url('../../assets/homePageBG.svg');
+    top: 90px;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100% !important;
+  height: 650px;
+  overflow-x: hidden;
+}
+
+.home {
+        top: 90px;
+display: flex;
+  flex-direction: column;
+}
+
+.homepage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+.content-wrapper {
+    z-index: 2;
+    text-align: center;
+    color: black;
+    margin-top: 200px;
+    margin-bottom: 80px;
+  max-width: 1200px;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+
+.homepage-title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+    max-width: 80%;
+}
+
+.homepage-desc {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 40px;
+    max-width: 95%;
+}
+
+.homepage-cta {
+    background-color: #fff256;
+    border: 1px solid black;
+    padding: 20px 36px;
+    margin-top: 40px;
+    border-radius: 0;
+  cursor: pointer;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(-2deg); 
+  background-color: black;
+  z-index: 2;
+}
+
+.marquee-item {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 2rem;
+  display: inline-block;
+  line-height: 60px;
+}
+
+.background-strip {
+    width: 100%;
+    height: 60px;
+    background-color: #fff256;
+    z-index: 1;
+    transform: rotate(2deg);
+    margin-top: 700px;
+    margin-bottom: -100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .homepage-title {
+    font-size: 48px;
+  }
+
+  .homepage-desc {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .content-wrapper {
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+
+  .homepage-title {
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .homepage-desc {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .marquee-item {
+    font-size: 18px;
+    margin: 0 1rem;
+    line-height: 50px;
+  }
+
+  .background-strip {
+    margin-top: 580px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homepage-title {
+    font-size: 28px;
+  }
+
+  .homepage-desc {
+    font-size: 16px;
+  }
+
+  .homepage-cta {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+
+  .marquee-item {
+    font-size: 16px;
+    margin: 0 0.5rem;
+    line-height: 40px;
+  }
+}
