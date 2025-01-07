@@ -1,5 +1,5 @@
-import React from 'react'
-import "./HomePage.css"
+import React from "react";
+import "./HomePage.css";
 import Marquee from "react-fast-marquee";
 
 export default function HomePage() {

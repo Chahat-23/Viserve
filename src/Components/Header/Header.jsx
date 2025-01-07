@@ -1,24 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "../../assets/logo.svg";
-import {HiMenu} from "react-icons/hi";
+import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 
 export default function Header() {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  }
+  };
 
-  useEffect(()=> {
-    if(isMenuOpen)
-      document.body.classList.add('menu-open');
-    else
-      document.body.classList.remove("menu-open");
+  useEffect(() => {
+    if (isMenuOpen) document.body.classList.add("menu-open");
+    else document.body.classList.remove("menu-open");
 
-    return() => {
+    return () => {
       document.body.classList.remove("menu-open");
     };
   }, [isMenuOpen]);
@@ -42,13 +39,13 @@ export default function Header() {
 
         <div className="hamburger-icon" onClick={toggleMenu}>
           {isMenuOpen ? (
-            <IoMdClose size={28} color="white"/>
+            <IoMdClose size={28} color="white" />
           ) : (
-            <HiMenu size={28} color="white"/>
+            <HiMenu size={28} color="white" />
           )}
         </div>
 
-        <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+        <div className={`mobile-menu ${isMenuOpen ? "active" : ""}`}>
           <ul>
             <li>Home</li>
             <li>Services</li>
