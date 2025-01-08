@@ -1,0 +1,85 @@
+.video-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.video-container {
+    padding: 50px;
+    margin: 150px 150px 0 150px;
+    background-color: #fff256;
+    height: 600px;
+    z-index: 1;
+}
+
+.video-element {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    display: block;
+}
+
+.video-desc {
+  margin: -150px 250px 150px 150px;
+  background-image: url('../../assets/videoSecBG.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+  height: 454px;
+  background-color: black;
+  padding: 80px 100px;
+}
+
+.video-desc::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.493);
+  z-index: 0.5;
+}
+
+.video-desc h2 {
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+}
+
+.video-desc p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .video-desc {
+        padding: 30px;
+    }
+  .video-desc h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.video-desc p {
+    font-size: 16px;
+    font-weight: 300;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .video-desc {
+        padding: 50px;
+        margin: 0;
+    }
+    .video-desc h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.video-desc p {
+    font-size: 16px;
+    font-weight: 300;
+}
+}
