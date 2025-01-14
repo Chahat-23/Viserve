@@ -4,6 +4,7 @@ import './VideoSection.css'
 export default function VideoSection() {
   return (
     <div className="video-section">
+      <div className="grey-corner-top"></div>
       <div className="video-container">
         <video autoPlay loop playsInline className="video-element">
           <source src="../../assets/video.mp4" type="video.mp4" />
@@ -22,6 +23,7 @@ export default function VideoSection() {
           elevating your business to new heights.
         </p>
       </div>
+      <div className="grey-corner-bottom"></div>
     </div>
   );
 }
